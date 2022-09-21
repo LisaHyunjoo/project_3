@@ -16,3 +16,5 @@ class Newpost extends Component {
    
 
 }
+
+export default Newpost;
