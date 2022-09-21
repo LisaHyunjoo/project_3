@@ -6,9 +6,7 @@ const connectionStr =
 mongoose.connect(connectionStr);
 
 // set up listeners to monitor your database connection
-mongoose.connection.on("connected", () =>
-  console.log("DB connected... 🙌🙌🙌")
-);
+mongoose.connection.on("connected", () => console.log("DB connected."));
 
 mongoose.connection.on("error", (err) => console.log(err.message));
 

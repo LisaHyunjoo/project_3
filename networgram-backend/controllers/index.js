@@ -1,1 +1,3 @@
-console.log("dd");
+module.exports = {
+  posts: require("./postCtrls"),
+};
