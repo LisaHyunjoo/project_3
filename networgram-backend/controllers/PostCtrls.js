@@ -11,7 +11,6 @@ const index = (req, res) => {
 };
 
 const create = (req, res) => {
-
   db.Post.create(req.body, (err, createdPost) => {
     if (err) return res.status(404).json({ error: err.message });
     return res.status(200).json(createdPost);
@@ -49,5 +48,4 @@ module.exports = {
   create,
   destroy,
   update,
-
 };

@@ -1,3 +1,3 @@
 module.exports = {
-  networgrams: require("./post.routes.js"),
+  post: require("./post.routes.js"),
 };
