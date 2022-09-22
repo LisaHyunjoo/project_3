@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+
 import Newpost from './Components/page/Newpost'
 import PostView from "./Components/page/PostView";
 
@@ -11,6 +12,8 @@ function App() {
       <PostView />
     </>
   );
+
+
 }
 
 export default App;
