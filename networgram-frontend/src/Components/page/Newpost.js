@@ -11,10 +11,10 @@ class Newpost extends Component {
             return (
                 <>
                    <PostList 
-                        posts={data}
-                        onClickItem={(item) => {
-                            (item.id)
-                        }}
+                        // posts={data}
+                        // onClickItem={(item) => {
+                        //     (item.id)
+                        // }}
                    />
                 </>                
             )
