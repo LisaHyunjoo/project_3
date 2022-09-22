@@ -1,26 +1,24 @@
 import React, {Component} from 'react'
-import PostList from '../list/PostList'
+import CommentList from '../list/CommentList'
 
-class Newpost extends Component {
-    constructor(props){
-        super(props)
-        this.state = {}
-    }
+class NewPost extends Component {
 
     render() {
             return (
-                <>
-                   <PostList 
-                        // posts={data}
-                        // onClickItem={(item) => {
-                        //     (item.id)
-                        // }}
-                   />
-                </>                
+ 
+                <div>
+                    <h1>Title: {this.props.title}</h1>
+                    <p>Author: {this.props.author}</p>
+                    <div>
+                        <p>Body: {this.props.body}</p>
+                    </div>
+                    <h3>Comments:</h3>
+                    <ul>{this.props.comments[0]}</ul>
+                </div>             
             )
     }
    
 
 }
 
-export default Newpost;
+export default NewPost;

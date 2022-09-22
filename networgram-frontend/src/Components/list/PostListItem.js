@@ -1,11 +1,11 @@
-import React from 'react'
+// import React from 'react'
 
-function PostListItem(props) {
-    const {post, onClick} = props
+// function PostListItem(props) {
+//     const {post, onClick} = props
 
-    return(
-        <h1>{post.title}</h1>
-    )
-}
+//     return(
+//         <h1>{post.title}</h1>
+//     )
+// }
 
-export default PostListItem
+// export default PostListItem
