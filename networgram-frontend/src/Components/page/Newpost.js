@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PostList from '../list/PostList'
 
 class Newpost extends Component {
     constructor(props){
@@ -9,7 +10,12 @@ class Newpost extends Component {
     render() {
             return (
                 <>
-                    <h1>New Post</h1>
+                   <PostList 
+                        posts={data}
+                        onClickItem={(item) => {
+                            (item.id)
+                        }}
+                   />
                 </>                
             )
     }
