@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import NewPost from "./Components/page/NewPost";
 
+
 const post = {
   title: "My First Post",
   author: "Lisa",
@@ -24,6 +25,8 @@ function App() {
         />
     </>
   );
+
+
 }
 
 export default App;
