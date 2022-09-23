@@ -1,15 +1,28 @@
 import React, { Component } from "react";
 import "./App.css";
+import NewPost from "./Components/page/NewPost";
 
-import Newpost from './Components/page/Newpost'
-import PostView from "./Components/page/PostView";
 
+const post = {
+  title: "My First Post",
+  author: "Lisa",
+  body: "This is my first post.",
+  comments: [
+    "First!",
+    "Great post",
+    "Hire her"
+  ]
+}
 
 function App() {
   return (
     <>
-      < Newpost />
-      <PostView />
+      <NewPost 
+        title={post.title}
+        author={post.author}
+        body={post.body}
+        comments={post.comments}
+        />
     </>
   );
 

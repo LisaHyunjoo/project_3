@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-function CommentListItem (props) {
-    const {comment} = props
-
-    return(
-        <h1>{comment.content}</h1>
-    )
+class CommentListItem extends Component {
+    render() {
+        return (
+            <div>
+                <p>{this.props.message}</p>
+            </div>
+        )
+    }
 }
 
 export default CommentListItem

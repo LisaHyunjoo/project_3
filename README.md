@@ -12,7 +12,7 @@
 It allows users to share their code and receive code reviews from other users. It also could be used as a worldwide debugging channel.
 
 > Models including field names and their datatypes<br />
-> ** ERDs for noSQL Databases 
+> ** ERDs for noSQL Databases<br />
 > https://lucid.app/lucidchart/4070bec0-ea3b-4534-b0d5-8e4dc0e7f58a/edit?docId=4070bec0-ea3b-4534-b0d5-8e4dc0e7f58a&shared=true&page=0_0&invitationId=inv_7e0da9ac-7f12-4e6e-81c6-54e7936bb242#
 > 
 ** Routes
