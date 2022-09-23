@@ -4,9 +4,12 @@ const router = express.Router();
 const ctrls = require("../controllers");
 
 // router
-router.get("/", ctrls.posts.index);
-router.post("/", ctrls.posts.create);
-router.delete("/:id", ctrls.posts.destroy);
-router.put("/:id", ctrls.posts.update);
+router.get("/register", (req, res) => {});
+router.post("/register", ctrls.users.register);
+router.get("/signin", (req, res) => {});
+router.post("/signin", ctrls.users.signin);
+router.get("/signout", (req, res) => {
+  req.session.destroy();
+});
 
 module.exports = router;
