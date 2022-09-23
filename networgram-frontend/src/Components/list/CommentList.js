@@ -1,22 +1,34 @@
 // import React, {Component} from 'react'
 // import CommentListItem from './CommentListItem';
-// import PostListItem from './PostListItem'
 
-// class CommentList extends Component(props) {
-//     constructor(props) {
-//         super()
-//     }
+// class CommentList extends Component {
 //     render() {
+//         const {comments} = props
+//         // let comments = this.props.comments.map((comment, index)=> (
+//         //     <CommentListItem message = {comment} key={index} />
+//         // ))
 //         return(
 //             <>
-//                 let comments = props.comments.map((comment, index)=>{
-//                     <CommentList message = {comment} key={index} />
-//                 })
+//                {comments.map((comment, index) => {
+//                 return(
+//                     <CommentListItem
+//                         key={comment.id}
+//                         comment={comment}
+
+//                 )}
+//                  }
 //             </>
 //             )
-//     }
+//         }         
+// //             })}
+// //             <>
+// //                 <h3>Comments:</h3>
+// //                 <ul>{comments} </ul>     
+// //             </>
+// //             )
+// //     }
 
-// }
+// // }
 
 // export default CommentList
 

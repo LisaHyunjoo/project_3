@@ -1,9 +1,13 @@
 import React, {Component} from 'react'
-import CommentList from '../list/CommentList'
+import CommentListItem from '../list/CommentListItem'
 
 class NewPost extends Component {
 
     render() {
+       
+        let comments = this.props.comments.map((comment, index) => (
+            <CommentListItem message={comment} key={index}/>
+          ))
             return (
  
                 <div>
@@ -12,8 +16,8 @@ class NewPost extends Component {
                     <div>
                         <p>Body: {this.props.body}</p>
                     </div>
-                    <h3>Comments:</h3>
-                    <ul>{this.props.comments[0]}</ul>
+                    <h3>Comments: </h3>
+                    {comments}
                 </div>             
             )
     }

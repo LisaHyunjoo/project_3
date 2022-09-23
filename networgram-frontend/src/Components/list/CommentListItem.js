@@ -4,7 +4,7 @@ class CommentListItem extends Component {
     render() {
         return (
             <div>
-                <li>{this.props.message}</li>
+                <p>{this.props.message}</p>
             </div>
         )
     }
