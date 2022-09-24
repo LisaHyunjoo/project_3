@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
-class Newpost extends Component {
+
+class PostView extends Component {
     constructor(props){
         super(props)
         this.state = {}
@@ -8,13 +9,14 @@ class Newpost extends Component {
 
     render() {
             return (
-                <>
-                    <h1>New Post</h1>
-                </>                
+ 
+                <div>
+              
+                </div>             
             )
     }
    
 
 }
 
-export default Newpost;
+export default PostView;

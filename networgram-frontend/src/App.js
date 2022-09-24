@@ -1,10 +1,32 @@
 import React, { Component } from "react";
 import "./App.css";
-import Newpost from "./Components/Wall/Newpost";
-import Comment from "./Components/Wall/Comment";
-import Profile from "./Components/User/Profile";
-import Login from "./Components/User/Login";
-import Register from "./Components/User/Register";
+import NewPost from "./Components/page/NewPost";
+
+
+const post = {
+  title: "My First Post",
+  author: "Lisa",
+  body: "This is my first post.",
+  comments: [
+    "First!",
+    "Great post",
+    "Hire her"
+  ]
+}
+
+function App() {
+  return (
+    <>
+      <NewPost 
+        title={post.title}
+        author={post.author}
+        body={post.body}
+        comments={post.comments}
+        />
+    </>
+  );
+
+
 
 let baseURL = "";
 
@@ -32,6 +54,7 @@ class App extends Component {
       </>
     );
   }
+
 }
 
 export default App;
